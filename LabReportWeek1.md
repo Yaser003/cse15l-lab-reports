@@ -27,6 +27,9 @@ ls -a
 cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
 cat /home/linux/ieng6/cs15lwi23/public/hello.txt
 
+![image](https://user-images.githubusercontent.com/89693979/212207499-6965f8f9-f31c-47f9-ba3c-a7dae4fc1d8d.png)
+
+
 Next, we'll try creating a website where you can show your creations.
 
 go to [github](www.github.com)
