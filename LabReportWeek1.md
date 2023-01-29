@@ -9,7 +9,7 @@ Type in your username and your PID and you should be directed to the following p
 
 ![image](https://user-images.githubusercontent.com/89693979/215351959-367fa31d-c601-4f94-b6d8-a30a6cd89671.png)
 
-The three letters circled in red will be your username, they will be different for you, remember them for later. after noting down these three letters, click on the following button:
+The three letters circled in red will be your username, they will be different for you, remember them for later. After noting down these three letters, click on the following button:
 
 ![image](https://user-images.githubusercontent.com/89693979/215352106-dec8bac5-e824-453b-ae2b-ca7171aa379c.png)
 
