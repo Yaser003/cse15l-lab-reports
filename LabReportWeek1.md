@@ -77,24 +77,42 @@ try out some of these commands:
 ![image](https://user-images.githubusercontent.com/89693979/212207499-6965f8f9-f31c-47f9-ba3c-a7dae4fc1d8d.png)
 
 
-Next, we'll try creating a website where you can show your creations.
+6. Next, we'll try creating a website where you can show your creations.
 
 go to [github](www.github.com)
 
-click on the + in the top right and create a new repository. name it cse15l-lab-reports.
+Click on the + in the top right and create a new repository. name it cse15l-lab-reports.
 
-then, under the set up in desktop button, you'll find a create new file button.
+![image](https://user-images.githubusercontent.com/89693979/215354046-ed371cce-911e-48be-846d-650cb6ea97dd.png)
+
+![image](https://user-images.githubusercontent.com/89693979/215354073-f5c54056-caa7-4c71-8999-20bd6eb055e6.png)
+
+After pressing "create repository", the landing page should look like this(ignore the name of my repository):
+
+![image](https://user-images.githubusercontent.com/89693979/215354151-0c78a0c9-27a9-416b-954c-3cb92cba1edc.png)
+
+Click on create a new file (inside the red box in the previous image).
 
 create a file called index.md and type anything in it.
 
-next, go to the settings of the repository and click on the pages tab.
+Next, go to the settings of the repository and click on the pages tab.
 
-go the branch seciton and select main, then save.
+![image](https://user-images.githubusercontent.com/89693979/215354446-54ff7605-703f-4c52-8085-f857f907fd49.png)
 
-wait 20 seconds before refreshing the page.
+![image](https://user-images.githubusercontent.com/89693979/215354468-8a982cde-f35d-432f-bc99-fd002e8d0fc3.png)
 
-Congratulations, you now have a web page.
 
-you can include links to other files in your repository in index.md to reference them.
+Go the branch seciton and select main, then save.
 
-now, make a tutorial on what you just learned for your underclassmen
+![image](https://user-images.githubusercontent.com/89693979/215354515-127af27e-9f1e-45fe-b7a1-81099f46c851.png)
+
+
+Wait 20 seconds before refreshing the page.
+
+After refreshing the page, a url for your webpage should appear.
+
+![image](https://user-images.githubusercontent.com/89693979/215354734-197480b8-7304-4bc9-af21-6337d7c728d6.png)
+
+Now, create another file with any name you want but ".md" (markdown) at the end.
+
+You can include links to other files in your repository in index.md to reference them.
