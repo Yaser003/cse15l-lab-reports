@@ -56,12 +56,14 @@ Then select Git Bash.
 
 ![image](https://user-images.githubusercontent.com/89693979/212206158-a1295a50-f878-401d-9e4c-6fa4f38b9bd5.png)
 
+Next, type in the password that you chose in the first step(password shouldn't appear, dont worry, that's a feature not a bug.)
 
-then it'll ask you if you want to connect, type yes.
+If the following text appears in the terminal, you're connected to the remote server (network delay issue doesn't have to be there for confirmation):
 
-next, type in the password that you chose in the first step.
+![image](https://user-images.githubusercontent.com/89693979/215353894-860b2dd9-afd4-463b-9e47-82211499f2c8.png)
 
-Congratulations! you're connected to the remote server.
+
+5. Lets Experiment!
 
 try out some of these commands:
 
