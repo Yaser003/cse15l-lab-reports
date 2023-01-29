@@ -67,12 +67,12 @@ If the following text appears in the terminal, you're connected to the remote se
 
 try out some of these commands:
 
-cd ~
-cd
-ls -lat
-ls -a
-cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
-cat /home/linux/ieng6/cs15lwi23/public/hello.txt
+1. cd ~
+2. cd
+3. ls -lat
+4. ls -a
+5. cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
+6. cat /home/linux/ieng6/cs15lwi23/public/hello.txt
 
 ![image](https://user-images.githubusercontent.com/89693979/212207499-6965f8f9-f31c-47f9-ba3c-a7dae4fc1d8d.png)
 
