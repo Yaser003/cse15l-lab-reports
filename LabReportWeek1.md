@@ -33,11 +33,26 @@ After you have it downloaded, a window similar to the following one should open 
 
 
 
-next, download [git](https://gitforwindows.org/)
+3. Download [git](https://gitforwindows.org/)
 
-then, open up visual studio code and press the down arrow icon on the right side of the terminal. you'll find git bash, press on that.
+If you followed the steps correctly and are currently at the previously included image of VScode, you can open the terminal using either ctrl + shift + ` (top left button under esc if you're using qwerty layout) or using the terminal tab shown in the following image:
 
-in the terminal, enter "ssh cs15lwi23xxx@ieng6.ucsd.edu" and replace the three x's with the three letters you noted down.
+![image](https://user-images.githubusercontent.com/89693979/215353443-8e2a3a71-afff-41aa-b08d-53c79aa8c656.png)
+
+A terminal should pop up at the bottom of the window.
+
+After confirming that it has appeared, press ctrl+ shift + P. A search bar should appear. type "default profile" then click on it ( should be the online option if typed in correctly.)
+
+![image](https://user-images.githubusercontent.com/89693979/215353566-d9f68132-fe6c-4730-8632-bcfbd5a0e233.png)
+
+Then select Git Bash.
+
+![image](https://user-images.githubusercontent.com/89693979/215353602-4b5852fd-cfb3-43fc-878e-dcc6d4d21786.png)
+
+
+
+
+4. In the terminal, enter "ssh cs15lwi23xxx@ieng6.ucsd.edu" and replace the three x's with the three letters you noted down in step 1.
 
 ![image](https://user-images.githubusercontent.com/89693979/212206158-a1295a50-f878-401d-9e4c-6fa4f38b9bd5.png)
 
