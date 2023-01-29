@@ -17,9 +17,9 @@ After clicking on it, you'll find a link to change your password (you may be ask
 
 ![image](https://user-images.githubusercontent.com/89693979/215352074-432676e6-263f-4b34-b1db-7c2f05342553.png)
 
-Once you get to the following page, enter your current password, and the new password twice. next to the green arrow, you'll see an option for yes and no. Press "yes" if you want to change your tritonlink password aswell. next to the red arrow, you should press "Yes" if you want to change the password for course specific accounts (Recommended). After inputting all the input, Do not press on check password. go the field next to the blue arrow then press enter.
+Once you get to the following page, enter your current password, and the new password twice. next to the green arrow, you'll see an option for yes and no. Press "yes" if you want to change your tritonlink password aswell. next to the red arrow, you should press "Yes" if you want to change the password for course specific accounts (Recommended). After inputting all the input, Do NOT press on check password. go the field next to the blue arrow then press enter.
 
-![image](https://user-images.githubusercontent.com/89693979/215352305-46da853d-d035-44a3-8fad-f2c923c9ba7f.png)
+![image](https://user-images.githubusercontent.com/89693979/215352908-d2274ae6-e92f-4066-a455-757d10e35b58.png)
 
 After getting the following page, you should wait 15-60 mins for the new password to take effect:
 
