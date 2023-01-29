@@ -116,3 +116,6 @@ After refreshing the page, a url for your webpage should appear.
 Now, create another file with any name you want but ".md" (markdown) at the end.
 
 You can include links to other files in your repository in index.md to reference them.
+
+![image](https://user-images.githubusercontent.com/89693979/215354956-ae1aff58-e4d8-4499-9c90-8de3599a4a13.png)
+
