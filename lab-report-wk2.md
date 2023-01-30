@@ -52,6 +52,19 @@ When the server is first started, the main method is called.
 
 
 
+![SCREENSHOT](./screenshot2.png)
+
+
+
+-When I add all the strings to the query the handleRequest method seperates each of them after the "=" sign.
+
+-The values affected include the arrayList which has now been appended with multiple strings including my last name, the class code, etc.
+
+
+
+PART 2:
+
+
 
 
 
