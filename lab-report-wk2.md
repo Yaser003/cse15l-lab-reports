@@ -1,10 +1,8 @@
 Code for String Server:
 
-import java.io.IOException;
+```import java.io.IOException;
 import java.net.URI;
-
 import java.util.ArrayList;
-
 public class StringHandler implements URLHandler {
     private ArrayList<String> messages = new ArrayList<String>();
     
@@ -22,8 +20,6 @@ public class StringHandler implements URLHandler {
             return "Invalid request";
         }
     }
-
-    
 }
 
 
@@ -38,7 +34,9 @@ class StringServer {
 
         Server.start(port, new StringHandler());
     }
-}
+}```
+
+
 
 
 
