@@ -36,7 +36,7 @@ class StringServer {
     }
 }
 ```
-![SCREENSHOT](screenshot1.png)
+![SCREENSHOT](screenshot 1.png)
 
 
 
