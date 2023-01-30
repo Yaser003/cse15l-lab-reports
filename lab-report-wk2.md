@@ -36,7 +36,7 @@ class StringServer {
     }
 }
 ```
-![SCREENSHOT](screenshot\ 1.png)
+![SCREENSHOT](./screenshot1.png)
 
 
 
