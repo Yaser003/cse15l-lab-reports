@@ -81,7 +81,7 @@ Failure-inducing input:
 ```
 public void testReverseInPlace() {
     int[] input = {6,1,2 , 3};
-    ArrayExamples.reverseInPlace(input1);
+    ArrayExamples.reverseInPlace(input);
     assertArrayEquals(new int[]{3,2,1,6}, input);
 	}
 ```
@@ -90,9 +90,9 @@ Non-Failure-Inducing Input:
 
 ```
 public void testReverseInPlace() {
-    int[] input1 = {6};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{6}, input1);
+    int[] input = {6};
+    ArrayExamples.reverseInPlace(input);
+    assertArrayEquals(new int[]{6}, input);
 }
 ```
 
