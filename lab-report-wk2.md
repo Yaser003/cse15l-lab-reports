@@ -152,7 +152,9 @@ The fix works because it prevents the earlier indexes from being overwritten by 
 
 PART 3:
 
-In the week 2 lab I learned to create local servers and how to edit their outputs based on the requests of the user (Im the only user since the server is local)
+In the week 2 lab I learned to create local servers and how to edit their outputs based on the requests of the user. I learned several new server related terms such as "port", which is a number the server is assigned, and "localhost" which turns out to be the device running the local server. example: My laptop.
+
+In the week 3 lab I learned an efficient way to debug using the JUNIT program. I learned how to use assertEquals and all its derivatives. I also learned a more efficient way to read symptoms of bugs to better take care of them.
 
 
 
