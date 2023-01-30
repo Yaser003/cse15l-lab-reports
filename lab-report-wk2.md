@@ -114,6 +114,38 @@ Non-Failure-Inducing:
 
 
 
+The bug before the fix:
+
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+}
+```
+
+Fixed:
+
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length /2; i++) {
+      int j = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = j;
+    }
+    
+  }
+```
+
+The fix works because it prevents the earlier indexes from being overwritten by storing said indexes in the variable "j"  on each run of the loop and then storing them back into the end of the array for the first element (or their corresponding place.)
+
+PART 3:
+
+In the week 2 lab I learned to create local servers and how to edit their outputs based on the requests of the user (Im the only user since the server is local)
+
+
+
+
 
 
 
