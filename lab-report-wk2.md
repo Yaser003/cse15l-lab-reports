@@ -64,6 +64,17 @@ When the server is first started, the main method is called.
 
 PART 2:
 
+method bug chosen: 
+
+```static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+}```
+
+
+
+Failure-inducing input:
 
 
 
