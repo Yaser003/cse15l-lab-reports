@@ -4,7 +4,8 @@ PART 1:
 Code for String Server:
 
 
-```import java.io.IOException;
+```
+import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
 public class StringHandler implements URLHandler {
@@ -25,8 +26,6 @@ public class StringHandler implements URLHandler {
         }
     }
 }
-
-
 class StringServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
@@ -39,6 +38,7 @@ class StringServer {
         Server.start(port, new StringHandler());
     }
 }
+
 ```
 
 
