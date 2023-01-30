@@ -1,3 +1,6 @@
+PART 1:
+
+
 Code for String Server:
 
 ```import java.io.IOException;
@@ -37,6 +40,13 @@ class StringServer {
 }
 ```
 ![SCREENSHOT](./screenshot1.png)
+
+
+When the server is first started, the main method is called.
+
+- When I add my name to the URI as show in the image above, the handleRequest method is called and it divides the url into two parts, a string before the equal sign and a string after the equal sign. with the string after the equal sign being the message to be added to the "messages" arrayList that will be returned at the end of the method.
+
+- The values affected include the arrayList which has now been appended with my name (the message.)
 
 
 
