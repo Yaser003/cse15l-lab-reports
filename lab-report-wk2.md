@@ -66,17 +66,47 @@ PART 2:
 
 method bug chosen: 
 
-```static void reverseInPlace(int[] arr) {
+```
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
-}```
+}
+```
 
 
 
 Failure-inducing input:
 
+```
+public void testReverseInPlace() {
+    int[] input = {6,1,2 , 3};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{3,2,1,6}, input);
+	}
+```
 
+Non-Failure-Inducing Input:
+
+```
+public void testReverseInPlace() {
+    int[] input1 = {6};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{6}, input1);
+}
+```
+
+Symptoms:
+
+
+Failure Inducing:
+
+
+
+
+
+
+Non-Failure-Inducing:
 
 
 
