@@ -101,6 +101,11 @@ Symptoms:
 
 Failure Inducing:
 
+
+
+
+
+
 ![SCREENSHOT](./screenshot3.png)
 
 
@@ -110,7 +115,13 @@ Failure Inducing:
 
 Non-Failure-Inducing:
 
+
+
+
+
 ![SCREENSHOT](./screenshot4.png)
+
+
 
 
 
