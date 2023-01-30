@@ -125,7 +125,7 @@ Non-Failure-Inducing:
 
 
 
-The bug before the fix:
+The buggy code before the fix:
 
 ```
 static void reverseInPlace(int[] arr) {
