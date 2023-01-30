@@ -101,12 +101,16 @@ Symptoms:
 
 Failure Inducing:
 
+![SCREENSHOT](./screenshot3.png)
+
 
 
 
 
 
 Non-Failure-Inducing:
+
+![SCREENSHOT](./screenshot4.png)
 
 
 
