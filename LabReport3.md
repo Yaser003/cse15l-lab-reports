@@ -21,6 +21,8 @@ our case:
 "find written_2 > find-results.txt"
 ```
 
+output:
+
 The second line:
 
 its the main grep, in which we use the grep command to choose the string we want to look for and where we want to look for it, in our case, we'd be looking in 
@@ -53,12 +55,23 @@ our case:
 wc grep-results.txt
 ```
 
+output: 
+
+```
+224  224 11268 grep-results.txt
+```
+
 Example 1.2:
 
 ```
 find written_2 > find-results.txt
 grep ".pdf" find-results.txt > grep-results.txt
 wc grep-results.txt
+```
+
+output(no pdf files in written_2):
+```
+0 0 0 grep-results.txt
 ```
 
 The second command-line option I chose for this command is one I used recently in the skill demo. This command line can be used to recursively search a directory 
@@ -76,10 +89,36 @@ Example 2.1:
 grep -r Lucayans
 ```
 
+output:
+returns a file that contains the word Lucayans
+
+```
+skill-demo1-data/written_2/travel-guides/berlitz2/Bahamas-History.txt
+```
+
 Example 2.2
 
 ```
-grep -r that
+grep -r wter-sports
 ```
 
-The third command-line option
+output:
+returns multiple files that contain the string "water-sports"
+
+```
+skill-demo1-data/written_2/travel-guides/berlitz1/WhatToJamaica.txt
+skill-demo1-data/written_2/travel-guides/berlitz1/WhatToLakeDistrict.txt
+skill-demo1-data/written_2/travel-guides/berlitz1/WhereToItaly.txt
+skill-demo1-data/written_2/travel-guides/berlitz2/Bahamas-Intro.txt
+skill-demo1-data/written_2/travel-guides/berlitz2/Vallarta-WhereToGo.txt
+```
+
+The third command-line option only displays the matched pattern and not the whole line containing the pattern.
+
+format:
+
+```
+grep -0 *example* written_2/
+```
+
+
