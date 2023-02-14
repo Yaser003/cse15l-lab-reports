@@ -86,31 +86,34 @@ grep -r *string*
 Example 2.1:
 
 ```
-grep -r Lucayans
+grep -r Lucay
 ```
 
 output:
 returns a file that contains the word Lucayans
 
 ```
-skill-demo1-data/written_2/travel-guides/berlitz2/Bahamas-History.txt
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-History.txt
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
 ```
 
 Example 2.2
 
 ```
-grep -r wter-sports
+grep -r water-sports
 ```
 
 output:
 returns multiple files that contain the string "water-sports"
 
 ```
-skill-demo1-data/written_2/travel-guides/berlitz1/WhatToJamaica.txt
-skill-demo1-data/written_2/travel-guides/berlitz1/WhatToLakeDistrict.txt
-skill-demo1-data/written_2/travel-guides/berlitz1/WhereToItaly.txt
-skill-demo1-data/written_2/travel-guides/berlitz2/Bahamas-Intro.txt
-skill-demo1-data/written_2/travel-guides/berlitz2/Vallarta-WhereToGo.txt
+skill-demo1-data/written_2/travel_guides/berlitz1/WhatToJamaica.txt
+skill-demo1-data/written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt
+skill-demo1-data/written_2/travel_guides/berlitz1/WhereToItaly.txt
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ```
 
 The third command-line option only displays the matched pattern and not the whole line containing the pattern.
@@ -118,7 +121,24 @@ The third command-line option only displays the matched pattern and not the whol
 format:
 
 ```
-grep -0 *example* written_2/
+grep -r -o *string*
 ```
+
+Example 3.1:
+
+grep -r -o Lucayans 
+
+output:
+unlike command-line two, this only shows the word and the path instead of the whole file and the path.
+
+```
+written-2/travel_guides/berlitz2/Bahamas-History.txt:Lucayans
+written-2/travel_guides/berlitz2/Bahamas-History.txt:Lucayans
+skill-demo1-data/written-2/travel_guides/berlitz2/Bahamas-History.txt:Lucayans
+skill-demo1-data/written-2/travel_guides/berlitz2/Bahamas-History.txt:Lucayans
+```
+Example 3.2:
+
+grep -r- o
 
 
