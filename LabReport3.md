@@ -72,10 +72,14 @@ grep -r *string*
 
 Example 2.1:
 
+```
 grep -r Lucayans
+```
 
 Example 2.2
 
+```
 grep -r that
+```
 
 The third command-line option
