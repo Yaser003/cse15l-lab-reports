@@ -109,6 +109,11 @@ output:
 returns multiple files that contain the string "water-sports"
 
 ```
+written_2/travel_guides/berlitz1/WhatToJamaica.txt
+written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt
+written_2/travel_guides/berlitz1/WhereToItaly.txt
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 skill-demo1-data/written_2/travel_guides/berlitz1/WhatToJamaica.txt
 skill-demo1-data/written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt
 skill-demo1-data/written_2/travel_guides/berlitz1/WhereToItaly.txt
@@ -116,7 +121,8 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-Intro.txt
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ```
 
-The third command-line option only displays the matched pattern and not the whole line containing the pattern.
+The third command-line option only displays the matched pattern and not the whole line containing the pattern. unlike command-line two, this only shows the word 
+and the path instead of the whole file and the path.
 
 format:
 
@@ -126,10 +132,11 @@ grep -r -o *string*
 
 Example 3.1:
 
+```
 grep -r -o Lucayans 
+```
 
 output:
-unlike command-line two, this only shows the word and the path instead of the whole file and the path.
 
 ```
 written-2/travel_guides/berlitz2/Bahamas-History.txt:Lucayans
@@ -139,6 +146,65 @@ skill-demo1-data/written-2/travel_guides/berlitz2/Bahamas-History.txt:Lucayans
 ```
 Example 3.2:
 
-grep -r- o
+```
+grep -r- o water-sports
+```
+
+output:
+
+```
+written_2/travel_guides/berlitz1/WhatToJamaica.txt:Lucayans
+written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:Lucayans
+written_2/travel_guides/berlitz1/WhereToItaly.txt:Lucayans
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt:Lucayans
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:Lucayans
+skill-demo1-data/written_2/travel_guides/berlitz1/WhatToJamaica.txt:Lucayans
+skill-demo1-data/written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:Lucayans
+skill-demo1-data/written_2/travel_guides/berlitz1/WhereToItaly.txt:Lucayans
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-Intro.txt:Lucayans
+skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:Lucayans
+```
+
+The fourth Command-line option displays the line number of the matching pattern in each file. The output format is similar to command-line two, the difference is 
+the line number is included between the path and the text.
+
+format:
+
+```
+grep -r -n
+```
+
+Example 4.1
+
+grep -r -n Lucayans
+
+Output:
+
+```
+written-2/travel_guides/berlitz2/Bahamas-History.txt:6:
+written-2/travel_guides/berlitz2/Bahamas-History.txt:7:
+skill-demo1-data/written-2/travel_guides/berlitz2/Bahamas-History.txt:6:
+```
+
+Example 4.2:
+
+grep -r -n water-sports
+
+output:
+
+```
+written_2/travel_guides/berlitz1/WhatToJamaica.txt:76:
+written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:94:
+written_2/travel_guides/berlitz1/WhereToItaly.txt:3938:
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt:13:
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:133:
+skill-demo1-data/written_2/travel_guides/berlitz1/WhatToJamaica.txt:76:
+skill-demo1-data/written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:94:
+skill-demo1-data/written_2/travel_guides/berlitz1/WhereToItaly.txt:3938:
+skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-Intro.txt:13:
+skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:133:
+```
 
 
+Sources for command-lines 1 and 2: class and lab. 
+source for command-line 3 and 4: chatGPT. ChatGPT prompt: "In what ways can I use the grep command to search through a directory"
