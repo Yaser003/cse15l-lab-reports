@@ -188,11 +188,14 @@ your tests should pass:
 
 Now, we need to push the fix to github.
 
-we'll use the ```add``` and ```push``` commands.
+we'll use the ```add```,```commit```, and ```push``` commands.
 
 ```
 git add ListExamples.java
 ```
+
+![image](https://user-images.githubusercontent.com/89693979/221799699-bf92131a-e557-433c-acd1-86e734c52a6f.png)
+
 
 
 ![image](https://user-images.githubusercontent.com/89693979/221770953-58c483ea-1f2a-44dc-8241-23714803ee6a.png)
