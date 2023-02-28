@@ -136,9 +136,9 @@ To fix the error follow these key clicks:
 
 ```
 <down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down
-<down><down><down><down><down><down>
+<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down>
 
-<right><right><right><right><right><right><right><right><right><right><right><right><right><right>
+<right><right><right><right><right><right><right><right><right><right><right><right>
 
 <backspace>
 
@@ -163,8 +163,17 @@ For our case we don't change anything so just press ```<Enter>```.
 Lastly, press ```ctrl + <X>``` to exit the file.
 
 
+5)
+
+Now, lets run the tests again to see if we've passed them. 
+
+To skip the time waste of typing our the compile code line again, press ```<up><up><up>``` to find it. This is the history of your command-line.
 
 
+![image](https://user-images.githubusercontent.com/89693979/221765196-c94b037e-c65f-4cc6-a6d1-0159afa52098.png)
+
+
+After running the compile commmand-line, press  ```<up><up><up>``` on the new command-space to find the "run" command-line.
 
 
 
