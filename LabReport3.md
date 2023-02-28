@@ -39,21 +39,27 @@ Use-Case: Suppose you are looking for information about a certaincompany, but yo
 
 
 Option 2: -r
-This option causes grep to perform a recursive search. That means it will search for patterns not just in the specified file(s), but in all files and directories within the specified directory (and subdirectories).
+
+This option causes grep to perform a recursive search. That means it will search for patterns not just in the specified file(s), but in all files and directories
+within the specified directory (and subdirectories).
 
 format:
+
 
 ```
 grep -r *string*
 ```
 
+
 Example 2.1:
+
 
 ```
 grep -r Lucay
 ```
 
-output:
+
+Output:
 returns a file that contains the word Lucayans
 
 ```
@@ -65,12 +71,14 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
 
 Example 2.2
 
+
 ```
 grep -r water-sports
 ```
 
 output:
 returns multiple files that contain the string "water-sports"
+
 
 ```
 written_2/travel_guides/berlitz1/WhatToJamaica.txt
@@ -90,6 +98,7 @@ Use-Case: Suppose you have a large directory with many subdirectories, and you w
 to search recursively through all the files in the directory and its subdirectories.
 
 
+Option 3: -o
 
 The third command-line option only displays the matched pattern and not the whole line containing the pattern. unlike command-line two, this only shows the word 
 and the path instead of the whole file and the path.
