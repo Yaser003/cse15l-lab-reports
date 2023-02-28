@@ -104,7 +104,7 @@ A sign of success for compilation is nothing showing up and a new command-line b
 Run:
 
 ```
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore listExamplesTests
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 ```
 
 ![image](https://user-images.githubusercontent.com/89693979/221760110-b7460468-9258-468e-9905-aeca5c26b1d7.png)
