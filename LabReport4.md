@@ -60,10 +60,9 @@ git clone *repo link*
 ![image](https://user-images.githubusercontent.com/89693979/221758981-e4cc67af-99e2-419d-8c0f-08be47a70da6.png)
 
 
-Before you move on to the next step, don't forget to "cd" into the lab7 directory.
+Before you move on to the next step, don't forget to ```cd``` into the lab7 directory.
 
 Side note: you can check what directory you're in by looking to the left of the command-line number.
-
 
 
 ```
@@ -106,7 +105,56 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 There is a failure in the Test!
 
-To fix it, use the the ```Nano``` command on the file with the error. In our case, that file is "ListExamples.java."
+To fix it, use the the ```nano``` command on the file with the error. In our case, that file is "ListExamples.java."
+
+
+```
+nano ListExamples.java
+```
+
+The file with the error should be displayed:
+
+![image](https://user-images.githubusercontent.com/89693979/221760720-bf559bd9-d3f7-4b8b-8579-da7706bcb664.png)
+
+
+The error with our file is a typo, index2 was written when it should have been index1.
+
+![image](https://user-images.githubusercontent.com/89693979/221760981-03b645f7-ef3a-45bb-ac1d-0822a89a44e7.png)
+
+To fix the error follow these key clicks:
+
+```
+<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down
+<down><down><down><down><down><down>
+
+<right><right><right><right><right><right><right><right><right><right><right><right><right><right>
+
+<backspace>
+
+<1>
+```
+
+If you following the key clicks above correctly, index2 should be corrected to index1.
+
+
+Next, you need to exit and save the file.
+
+From the options at the bottom we will use ```crtl + X```/Exit.
+
+![image](https://user-images.githubusercontent.com/89693979/221762109-1537d812-a677-46a8-be50-96796e6a091e.png)
+
+After exiting, you will be prompted with a Yes or No question asking you if you want to save the change.
+
+Press: ```<Y>```
+
+![image](https://user-images.githubusercontent.com/89693979/221762390-e154053e-14fd-49d6-9eb4-3a98d9bc32dc.png)
+
+
+
+
+
+
+
 
 
 
