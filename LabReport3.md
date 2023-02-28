@@ -5,7 +5,9 @@ Option 1: -i
 
 This option causes grep to perform a case-insensitive search. That means it will match patterns regardless of whether they are in upper or lower case.
 
+
 Example 1.1:
+
 
 ```
 grep -i 'PYTHON' ./written_2/languages.txt
@@ -20,7 +22,11 @@ python
 
 Explanation:  This command searches for lines in the languages.txt file in the ./written_2 directory that contain the word "PYTHON" (in any case), and it
 prints those lines. In this case, it matches two lines that contain "Python" and "python" respectively. 
+
+
 Example 1.2:
+
+
 
 ```
 grep -i 'CAT' ./written_2/animals.txt
@@ -39,6 +45,7 @@ Use-Case: Suppose you are looking for information about a certaincompany, but yo
 
 
 Option 2: -r
+
 
 This option causes grep to perform a recursive search. That means it will search for patterns not just in the specified file(s), but in all files and directories
 within the specified directory (and subdirectories).
@@ -100,6 +107,7 @@ to search recursively through all the files in the directory and its subdirector
 
 Option 3: -o
 
+
 The third command-line option only displays the matched pattern and not the whole line containing the pattern. unlike command-line two, this only shows the word 
 and the path instead of the whole file and the path.
 
@@ -144,6 +152,8 @@ skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-Intro.txt:Lucayans
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:Lucayans
 ```
 Option 4: -n
+
+
 This option causes grep to print the line numbers along with the lines that match the pattern.
 
 Example 4.1:
@@ -183,6 +193,8 @@ containing the pattern, and then use a text editor to modify that line.
 
 
 Option 5: -v
+
+
 This option causes grep to print only the lines that do not match the pattern, rather than printing the lines that do match.
 
 Example 5.1:
@@ -202,7 +214,9 @@ pear
 Explanation: This command searches for lines in the fruits.txt file in the ./written_2 directory that do not contain the word "orange", and it prints only those
 lines. In this case, it excludes the line that contains "orange" and prints the rest of the lines.
 
+
 Example 5.2:
+
 
 ```
 grep -v 'ruby' ./written_2/*
