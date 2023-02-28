@@ -198,22 +198,26 @@ git add ListExamples.java
 
 
 
-![image](https://user-images.githubusercontent.com/89693979/221770953-58c483ea-1f2a-44dc-8241-23714803ee6a.png)
-
 
 
 Then, 
 
+```
+git commmit - m "comitted"
+```
+
+![image](https://user-images.githubusercontent.com/89693979/221800101-b6ab6908-1159-4662-a376-e936fef17ce1.png)
+
+
+
+Finally,
+
 
 ```
-git push
+git push origin main
 ```
 
-
-![image](https://user-images.githubusercontent.com/89693979/221771018-6fba697b-22a3-4624-89d8-12bb303b6634.png)
-
-
-If you completed the previous steps correctly, you will be prompted to enter your github username and password
+![image](https://user-images.githubusercontent.com/89693979/221800297-dde85756-9183-4b17-b940-4cceb7b8ab78.png)
 
 
-![image](https://user-images.githubusercontent.com/89693979/221775377-b047558c-0392-4877-a1a8-c3c1d2849757.png)
+
