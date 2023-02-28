@@ -74,7 +74,7 @@ cd lab7
 
 ![image](https://user-images.githubusercontent.com/89693979/221759463-3f30595c-e3d1-479c-b22f-d7c92c9cfa79.png)
 
-Now that you've cloned the repo and cd'd into it,
+Now that you've cloned the repo and ```cd```'d into it,
 
 Compile and Run the tests to show that there is an error:
 
