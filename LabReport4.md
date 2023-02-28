@@ -104,7 +104,7 @@ A sign of success for compilation is nothing showing up and a new command-line b
 Run:
 
 ```
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore listExamplesTests.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore listExamplesTests
 ```
 
 ![image](https://user-images.githubusercontent.com/89693979/221760110-b7460468-9258-468e-9905-aeca5c26b1d7.png)
@@ -125,12 +125,14 @@ nano ListExamples.java
 
 The file with the error should be displayed:
 
-![image](https://user-images.githubusercontent.com/89693979/221760720-bf559bd9-d3f7-4b8b-8579-da7706bcb664.png)
+![image](https://user-images.githubusercontent.com/89693979/221767744-4f4aea9f-35b3-4ac1-9d2d-c3ba7010f19e.png)
 
 
-The error with our file is a typo, index2 was written when it should have been index1.
 
-![image](https://user-images.githubusercontent.com/89693979/221760981-03b645f7-ef3a-45bb-ac1d-0822a89a44e7.png)
+The error with our file is a typo, index1 was written when it should have been index2.
+
+![image](https://user-images.githubusercontent.com/89693979/221767824-a15205cb-8165-4d04-b370-c536666707d8.png)
+
 
 To fix the error follow these key clicks:
 
@@ -142,10 +144,10 @@ To fix the error follow these key clicks:
 
 <backspace>
 
-<1>
+<2>
 ```
 
-If you following the key clicks above correctly, index2 should be corrected to index1.
+If you following the key clicks above correctly, index1 should be corrected to index2.
 
 
 Next, you need to exit and save the file.
@@ -173,7 +175,44 @@ To skip the time waste of typing our the compile code line again, press ```<up><
 ![image](https://user-images.githubusercontent.com/89693979/221765196-c94b037e-c65f-4cc6-a6d1-0159afa52098.png)
 
 
-After running the compile commmand-line, press  ```<up><up><up>``` on the new command-space to find the "run" command-line.
+Press  ```<up><up><up>``` on the new command-space to find the "run" command-line.
+
+
+your tests should pass:
+
+![image](https://user-images.githubusercontent.com/89693979/221769832-97b1a5a4-9dcf-43c7-8dbf-dd4078c2e6ad.png)
+
+
+6)
+
+Now, we need to push the fix to github.
+
+we'll use the ```add``` and ```push``` commands.
+
+```
+git add ListExamples.java
+```
+
+
+![image](https://user-images.githubusercontent.com/89693979/221770953-58c483ea-1f2a-44dc-8241-23714803ee6a.png)
+
+
+
+Then, 
+
+
+```
+git push
+```
+
+
+![image](https://user-images.githubusercontent.com/89693979/221771018-6fba697b-22a3-4624-89d8-12bb303b6634.png)
+
+
+If you completed the previous steps correctly, you will be prompted to enter your github username and password
+
+
+
 
 
 
