@@ -1,4 +1,4 @@
-First of all, we need to login to ieng6.
+1)  First of all, we need to login to ieng6.
 
 Use the following command-line to login.
 
@@ -38,6 +38,8 @@ An indicator of a successful login is the display of a Last Login in time (which
 ![image](https://user-images.githubusercontent.com/89693979/221757167-1692a7f9-4fc1-4967-95b8-388eb9a741ff.png)
 
 
+2)
+
 Next,
 
 go to the [lab7 repo](https://github.com/ucsd-cse15l-w23/lab7) and fork it.
@@ -73,9 +75,15 @@ cd lab7
 
 ![image](https://user-images.githubusercontent.com/89693979/221759463-3f30595c-e3d1-479c-b22f-d7c92c9cfa79.png)
 
+
+3)
+
+
 Now that you've cloned the repo and ```cd```'d into it,
 
-Compile and Run the tests to show that there is an error:
+
+
+Compile and Run the tests on our file:
 
 
 Compile:
@@ -104,6 +112,9 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 
 There is a failure in the Test!
+
+
+4)
 
 To fix it, use the the ```nano``` command on the file with the error. In our case, that file is "ListExamples.java."
 
@@ -139,28 +150,26 @@ If you following the key clicks above correctly, index2 should be corrected to i
 
 Next, you need to exit and save the file.
 
-From the options at the bottom we will use ```crtl + <X>```/Exit.
 
-![image](https://user-images.githubusercontent.com/89693979/221762109-1537d812-a677-46a8-be50-96796e6a091e.png)
+To save the file: press ```ctrl + <O>```
 
-After exiting, you will be prompted with a Yes or No question asking you if you want to save the change.
-
-Press: ```<Y>```
-
-![image](https://user-images.githubusercontent.com/89693979/221762390-e154053e-14fd-49d6-9eb4-3a98d9bc32dc.png)
+you will be prompted with the following prompt to change the files name:
 
 
-After you press ```<Y>``` , you will be returned to the file, but now the file is edited and the option to exit is no longer there. There is however the option to
-cancel.
+![image](https://user-images.githubusercontent.com/89693979/221763900-63de09ab-57be-49b1-a0ba-e6c7fdadb749.png)
 
-![image](https://user-images.githubusercontent.com/89693979/221762808-d8b966ae-5eaf-4545-9b87-1766bbf1ea38.png)
+For our case we don't change anything so just press ```<Enter>```.
+
+Lastly, press ```ctrl + <X>``` to exit the file.
 
 
-To cancel press ``` ctrl + <C>```
 
-After pressing cancel, the option to exit/ ```crtl + <X>``` will be available once more.
 
-Exit and when prompted by the save question. Press ```<N>``` to finally exit the nano.
+
+
+
+
+
 
 
 
