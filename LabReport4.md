@@ -139,7 +139,7 @@ If you following the key clicks above correctly, index2 should be corrected to i
 
 Next, you need to exit and save the file.
 
-From the options at the bottom we will use ```crtl + X```/Exit.
+From the options at the bottom we will use ```crtl + <X>```/Exit.
 
 ![image](https://user-images.githubusercontent.com/89693979/221762109-1537d812-a677-46a8-be50-96796e6a091e.png)
 
@@ -148,6 +148,20 @@ After exiting, you will be prompted with a Yes or No question asking you if you 
 Press: ```<Y>```
 
 ![image](https://user-images.githubusercontent.com/89693979/221762390-e154053e-14fd-49d6-9eb4-3a98d9bc32dc.png)
+
+
+After you press ```<Y>``` , you will be returned to the file, but now the file is edited and the option to exit is no longer there. There is however the option to
+cancel.
+
+![image](https://user-images.githubusercontent.com/89693979/221762808-d8b966ae-5eaf-4545-9b87-1766bbf1ea38.png)
+
+
+To cancel press ``` ctrl + <C>```
+
+After pressing cancel, the option to exit/ ```crtl + <X>``` will be available once more.
+
+Exit and when prompted by the save question. Press ```<N>``` to finally exit the nano.
+
 
 
 
