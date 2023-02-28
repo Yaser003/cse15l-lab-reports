@@ -213,27 +213,4 @@ git push
 If you completed the previous steps correctly, you will be prompted to enter your github username and password
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/89693979/221775377-b047558c-0392-4877-a1a8-c3c1d2849757.png)
