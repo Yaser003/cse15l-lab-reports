@@ -137,8 +137,9 @@ The error with our file is a typo, index1 was written when it should have been i
 To fix the error follow these key clicks:
 
 ```
-<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down
-<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down>
+<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down>
+<down><down><down><down><down><down><down><down><down><down><down<down><down><down><down><down>
+<down><down><down><down><down><down><down><down><down><down>
 
 <right><right><right><right><right><right><right><right><right><right><right><right>
 
