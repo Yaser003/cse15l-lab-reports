@@ -242,7 +242,7 @@ Use-Case: Suppose you have a configuration file with many lines, and you want to
 Option 6: ```-w```
 
 This option causes grep to match whole words only. For example, if you search for the word "the" using grep 'the', it will match lines containing words like "then"
-and "there", which may not be what you want. However, if you use grep -w 'the', it will match only lines containing the word "the".
+and "there", which may not be what you want. However, if you use grep ```-w``` 'the', it will match only lines containing the word "the".
 
 Examples 6.1:
 
