@@ -1,7 +1,7 @@
 The command I chose for this report is grep.
 
 
-Option 1: -i
+Option 1: ```-i```
 
 This option causes grep to perform a case-insensitive search. That means it will match patterns regardless of whether they are in upper or lower case.
 
@@ -44,7 +44,7 @@ Use-Case: Suppose you are looking for information about a certaincompany, but yo
 
 
 
-Option 2: -r
+Option 2: ```-r```
 
 
 This option causes grep to perform a recursive search. That means it will search for patterns not just in the specified file(s), but in all files and directories
@@ -105,7 +105,7 @@ Use-Case: Suppose you have a large directory with many subdirectories, and you w
 to search recursively through all the files in the directory and its subdirectories.
 
 
-Option 3: -o
+Option 3: ```-o```
 
 
 The third command-line option only displays the matched pattern and not the whole line containing the pattern. unlike command-line two, this only shows the word 
@@ -151,7 +151,7 @@ skill-demo1-data/written_2/travel_guides/berlitz1/WhereToItaly.txt:Lucayans
 skill-demo1-data/written_2/travel_guides/berlitz2/Bahamas-Intro.txt:Lucayans
 skill-demo1-data/written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:Lucayans
 ```
-Option 4: -n
+Option 4: ```-n```
 
 
 This option causes grep to print the line numbers along with the lines that match the pattern.
@@ -192,7 +192,7 @@ containing the pattern, and then use a text editor to modify that line.
 
 
 
-Option 5: -v
+Option 5: ```-v```
 
 
 This option causes grep to print only the lines that do not match the pattern, rather than printing the lines that do match.
@@ -239,7 +239,7 @@ Use-Case: Suppose you have a configuration file with many lines, and you want to
 'keyword' to exclude all lines that contain the keyword and show only the lines that don't contain it.
 
 
-Option 6: -w
+Option 6: ```-w```
 
 This option causes grep to match whole words only. For example, if you search for the word "the" using grep 'the', it will match lines containing words like "then"
 and "there", which may not be what you want. However, if you use grep -w 'the', it will match only lines containing the word "the".
@@ -274,8 +274,192 @@ N/A
 This command searches for lines in the fruits.txt file in the ./written_2 directory that contain the whole word "apple", and it prints those lines. In this case,
 there are no lines in the file that contain the whole word "apple", so the output is empty.
 
+Use-case:
+
+You want to search for a specific word, but you don't want to match on substrings or partial matches. For example, you might use ```-w``` to search for occurrences
+of the word "cat", but not match on words like "catch", "caterpillar", or "category". 
 
 
+Option 7: ```-B```
+
+The -B option tells grep to print a specified number of lines before each match. This can be useful when you want to see the context around each match, such as when
+troubleshooting an issue in a log file. By default, grep will print the entire line containing the match, but you can use -o to print only the matching portion of
+the line. You can also use -A to print lines after the match in addition to the lines before it.
+
+Example 7.1:
+
+```
+grep -B 2 'error' log.txt
+```
+
+output:
+
+```
+2023-02-25 14:03:42 - ERROR - Failed to connect to database
+2023-02-25 14:03:41 - INFO - Starting application
+2023-02-25 14:03:40 - INFO - Initializing database connection
+```
+
+This command searches for the word "error" in the file log.txt and prints the two lines before each match. In this example, we see the lines before the error
+message, which give us a better idea of what was happening in the application just before the error occurred.
+
+Example 7.2:
+
+```
+grep -B 3 -A 2 'error' log.txt
+```
+
+Output:
+
+```
+2023-02-25 14:03:41 - INFO - Starting application
+2023-02-25 14:03:40 - INFO - Initializing database connection
+2023-02-25 14:03:42 - ERROR - Failed to connect to database
+2023-02-25 14:03:43 - WARNING - Retrying connection...
+2023-02-25 14:03:44 - ERROR - Connection failed after 3 retries
+2023-02-25 14:03:45 - INFO - Shutting down application
+```
+
+This command prints three lines before each match and two lines after each match. This gives us an even more complete picture of the context around each error
+message.
+
+Use-case:
+
+a programmer is having trouble finding the lines of code that are causing an error. ```-B``` can be used to retreive two lines before or after each match to 
+help diagnose the error properly.
+
+
+Option 8: ```-f```
+
+The -f option in grep allows you to search for patterns that are listed in a file, rather than typing them directly on the command line. This can be useful when you
+have a large number of patterns to search for, or when the patterns are complex and difficult to type out manually. To use -f, you provide the name of the file
+containing the patterns using the -f option followed by the name of the file. The patterns in the file should be listed one per line.
+
+Example 8.1:
+
+```
+grep -f patterns.txt file.txt
+```
+
+Output:
+
+```
+Line 1: This is a test
+Line 3: This is another test
+```
+
+This command searches for all lines in file.txt that match any of the patterns listed in patterns.txt. In this example, patterns.txt contains two patterns: "test"
+and "another". The output shows the lines that match either pattern.
+
+Example 8.2:
+
+```
+grep -v -f exclude.txt file.txt
+```
+
+Output:
+
+```
+Line 1: This is a test
+Line 2: This line does not match any patterns
+```
+
+This command searches for all lines in file.txt that do not match any of the patterns
+
+Use-case: 
+A programmer is trying to find all the receipts of the company that are stored in a specific file type. ```-f``` can be used to either find that specific file type
+or exclude all other file types.
+
+
+Option 9: ```-s```
+
+The -s option is used to suppress error messages that are usually displayed when a file is not found or is unreadable. The ```-s``` option can also be used in
+combination with the -r option to search for a pattern recursively in a directory tree. 
+
+Example 9.1:
+
+
+```
+grep -s "apple" fruits.txt
+```
+
+Output:
+
+```
+apple
+pineapple
+```
+
+In this example, the command is searching for the string "apple" in the file fruits.txt. If fruits.txt does not exist, the command will not display an error message
+and will simply output nothing.
+
+Example 9.2:
+
+```
+grep -rs "apple" /usr/share/dict/
+```
+
+
+Output:
+
+```
+/usr/share/dict/words:apple
+/usr/share/dict/words:pineapple
+```
+
+In this example, the command searches for the string "apple" in all files under the directory /usr/share/dict/. If any file cannot be read, the command will not
+display an error message and will simply skip that file.
+
+Use-case:
+
+You can use the -s option when you want to suppress error messages that may be generated when grep searches for files that do not exist or that it cannot read.
+
+
+Option 10: ```-y```
+
+The -y option is used to ignore case sensitivity when searching for a pattern. The ```-y``` option can also be used to ignore case sensitivity when specifying a
+regular expression. 
+
+
+Example 10.1:
+
+```
+grep -y "test" file1.txt file2.txt
+```
+
+Output:
+
+```
+FILE1.TXT: test
+FILE2.TXT: TEST
+```
+
+In this example, the command searches for the string "test" in the files file1.txt and file2.txt. Since ```-y``` is used, the search is case-insensitive, so both
+"test" and "TEST" are considered matches.
+
+
+Example 10.2:
+
+
+```
+grep -y "^[a-z]" file.txt
+```
+
+
+Output:
+
+```
+abc
+def
+```
+
+In this example, the command searches for lines in file.txt that begin with a lowercase letter. Since -y is used, the search is case-insensitive, so lines that
+begin with either uppercase or lowercase letters are considered matches.
+
+
+Use-case:
+
+You can use the -y option when you want to search for a pattern without considering the case of the characters in the pattern or the text being searched.
 
 
 
