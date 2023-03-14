@@ -239,5 +239,48 @@ Use-Case: Suppose you have a configuration file with many lines, and you want to
 'keyword' to exclude all lines that contain the keyword and show only the lines that don't contain it.
 
 
+Option 6: -w
+
+This option causes grep to match whole words only. For example, if you search for the word "the" using grep 'the', it will match lines containing words like "then"
+and "there", which may not be what you want. However, if you use grep -w 'the', it will match only lines containing the word "the".
+
+Examples 6.1:
+
+```
+grep -w 'the' ./written_2/text.txt
+```
+
+Output:
+
+```
+The quick brown fox jumps over the lazy dog.
+```
+
+This command searches for lines in the text.txt file in the ./written_2 directory that contain the whole word "the", and it prints those lines. In this case, it
+matches the only line in the file that contains the whole word "the".
+
+Example 6.2:
+
+```
+grep -w 'apple' ./written_2/fruits.txt
+```
+
+Output:
+
+```
+N/A
+```
+
+This command searches for lines in the fruits.txt file in the ./written_2 directory that contain the whole word "apple", and it prints those lines. In this case,
+there are no lines in the file that contain the whole word "apple", so the output is empty.
+
+
+
+
+
+
+
 
 Source: chatGPT. ChatGPT prompt: "In what ways can I use the grep command to search through a directory"
+
+(The Linux Documentation Project - Grep Tutorial)[https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html]
