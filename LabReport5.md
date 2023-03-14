@@ -282,9 +282,9 @@ of the word "cat", but not match on words like "catch", "caterpillar", or "categ
 
 Option 7: ```-B```
 
-The -B option tells grep to print a specified number of lines before each match. This can be useful when you want to see the context around each match, such as when
-troubleshooting an issue in a log file. By default, grep will print the entire line containing the match, but you can use ```-o``` to print only the matching
-portion of the line. You can also use ```-A``` to print lines after the match in addition to the lines before it.
+The ```-B``` option tells grep to print a specified number of lines before each match. This can be useful when you want to see the context around each match, such
+as when troubleshooting an issue in a log file. By default, grep will print the entire line containing the match, but you can use ```-o``` to print only the
+matching portion of the line. You can also use ```-A``` to print lines after the match in addition to the lines before it.
 
 Example 7.1:
 
@@ -373,8 +373,8 @@ or exclude all other file types.
 
 Option 9: ```-s```
 
-The -s option is used to suppress error messages that are usually displayed when a file is not found or is unreadable. The ```-s``` option can also be used in
-combination with the -r option to search for a pattern recursively in a directory tree. 
+The ```-s``` option is used to suppress error messages that are usually displayed when a file is not found or is unreadable. The ```-s``` option can also be used in
+combination with the ```-r``` option to search for a pattern recursively in a directory tree. 
 
 Example 9.1:
 
@@ -417,8 +417,8 @@ A programmer can reduce clutter by surpressing the error messages that arrise fr
 
 Option 10: ```-y```
 
-The -y option is used to ignore case sensitivity when searching for a pattern. The ```-y``` option can also be used to ignore case sensitivity when specifying a
-regular expression. 
+The ```-y``` option is used to ignore case sensitivity when searching for a pattern. The ```-y``` option can also be used to ignore case sensitivity when specifying
+a regular expression. 
 
 
 Example 10.1:
@@ -453,13 +453,13 @@ abc
 def
 ```
 
-In this example, the command searches for lines in file.txt that begin with a lowercase letter. Since -y is used, the search is case-insensitive, so lines that
-begin with either uppercase or lowercase letters are considered matches.
+In this example, the command searches for lines in file.txt that begin with a lowercase letter. Since ```-y``` is used, the search is case-insensitive, so lines
+that begin with either uppercase or lowercase letters are considered matches.
 
 
 Use-case:
 
-You can use the -y option when you want to search for a pattern without considering the case of the characters in the pattern or the text being searched.
+You can use the ```-y``` option when you want to search for a pattern without considering the case of the characters in the pattern or the text being searched.
 
 
 
