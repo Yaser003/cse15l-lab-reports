@@ -283,8 +283,8 @@ of the word "cat", but not match on words like "catch", "caterpillar", or "categ
 Option 7: ```-B```
 
 The -B option tells grep to print a specified number of lines before each match. This can be useful when you want to see the context around each match, such as when
-troubleshooting an issue in a log file. By default, grep will print the entire line containing the match, but you can use -o to print only the matching portion of
-the line. You can also use -A to print lines after the match in addition to the lines before it.
+troubleshooting an issue in a log file. By default, grep will print the entire line containing the match, but you can use ```-o``` to print only the matching
+portion of the line. You can also use -A to print lines after the match in addition to the lines before it.
 
 Example 7.1:
 
@@ -332,8 +332,8 @@ help diagnose the error properly.
 Option 8: ```-f```
 
 The -f option in grep allows you to search for patterns that are listed in a file, rather than typing them directly on the command line. This can be useful when you
-have a large number of patterns to search for, or when the patterns are complex and difficult to type out manually. To use -f, you provide the name of the file
-containing the patterns using the -f option followed by the name of the file. The patterns in the file should be listed one per line.
+have a large number of patterns to search for, or when the patterns are complex and difficult to type out manually. To use ```-f```, you provide the name of the
+file containing the patterns using the ```-f``` option followed by the name of the file. The patterns in the file should be listed one per line.
 
 Example 8.1:
 
@@ -412,7 +412,7 @@ display an error message and will simply skip that file.
 
 Use-case:
 
-You can use the -s option when you want to suppress error messages that may be generated when grep searches for files that do not exist or that it cannot read.
+A programmer can reduce clutter by surpressing the error messages that arrise from his code from files that cant be read/processed.
 
 
 Option 10: ```-y```
