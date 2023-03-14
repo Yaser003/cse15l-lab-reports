@@ -283,4 +283,4 @@ there are no lines in the file that contain the whole word "apple", so the outpu
 
 Source: chatGPT. ChatGPT prompt: "In what ways can I use the grep command to search through a directory"
 
-(The Linux Documentation Project - Grep Tutorial)[https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html]
+[The Linux Documentation Project - Grep Tutorial](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html)
